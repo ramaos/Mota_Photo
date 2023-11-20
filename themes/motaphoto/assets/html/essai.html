@@ -1,0 +1,997 @@
+<body class="home page-template-default page page-id-48">
+    <header id="header" class="header flexrow">
+        <div class="container-header flexrow">
+            <a href="https://nathalie-mota.stephane-mouron.fr/" aria-label="Page d'accueil de Nathalie Mota">
+                <img src="https://nathalie-mota.stephane-mouron.fr/wp-content/themes/nathalie-mota/assets/img/logo_nathalie_mota.png"
+                    alt="Logo Nathalie Mota" />
+            </a>
+            <nav id="navigation">
+                <div class="menu-header-menu-container">
+                    <ul id="menu-header-menu" class="menu">
+                        <li id="menu-item-12"
+                            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-12">
+                            <a href="https://nathalie-mota.stephane-mouron.fr/" aria-current="page">Accueil</a>
+                        </li>
+                        <li id="menu-item-51"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51">
+                            <a href="https://nathalie-mota.stephane-mouron.fr/a-propos/">A propos</a>
+                        </li>
+                        <li id="menu-item-337"
+                            class="contact menu-item menu-item-type-custom menu-item-object-custom menu-item-337">
+                            <a title="contact_btn_navbar" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <button id="modal__burger" class="btn-modal" aria-label="Menu pour la version portable">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+
+                <div id="modal__content" class="modal__content">
+                    <div class="menu-header-menu-container">
+                        <ul id="menu-header-menu-1" class="menu">
+                            <li
+                                class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-12">
+                                <a href="https://nathalie-mota.stephane-mouron.fr/" aria-current="page">Accueil</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51">
+                                <a href="https://nathalie-mota.stephane-mouron.fr/a-propos/">A propos</a>
+                            </li>
+                            <li class="contact menu-item menu-item-type-custom menu-item-object-custom menu-item-337">
+                                <a title="contact_btn_navbar" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="front-page">
+        <section id="content">
+            <!-- Chargement du hero -->
+
+            <!-- Wrap Slider Area -->
+            <div class="hero-area">
+                <div class="hero-thumbnail">
+                    <!-- Initialisation de post à afficher -->
+                    <!-- Récupération d'un post photo en mode aléatoire (rand) -->
+
+                    <a href="https://nathalie-mota.stephane-mouron.fr/photo/lamour-sans-fin/"
+                        alt="L&rsquo;amour sans fin"><img width="640" height="960"
+                            src="https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-14-scaled.jpeg"
+                            class="attachment-hero size-hero wp-post-image" alt="Photo mariage de Vadim Paripa"
+                            decoding="async" fetchpriority="high" srcset="
+                https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-14-scaled.jpeg    1707w,
+                https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-14-200x300.jpeg    200w,
+                https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-14-683x1024.jpeg   683w,
+                https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-14-768x1152.jpeg   768w,
+                https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-14-1024x1536.jpeg 1024w,
+                https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-14-1365x2048.jpeg 1365w
+              " sizes="(max-width: 640px) 100vw, 640px" /></a>
+
+                    <h1 class="title-hero">Photographe event</h1>
+                </div>
+            </div>
+
+            <!-- Chargement des filtres -->
+
+            <div class="filter-area swiper-container">
+                <form class="flexrow swiper-wrapper" method="post">
+                    <!--  -->
+                    <!-- $terms->term_id :  -->
+                    <!-- $terms->taxonomy : nom de la taxonomie -->
+                    <!-- $terms->name : nom de l'élément de la taxonomie -->
+                    <!-- $terms->term_taxonomy_id : n° de l'élément de la taxonomie -->
+                    <div class="filterleft swiper-slide flexrow">
+                        <div id="filtre-categorie" class="select-filter flexcolumn">
+                            <span class="categorie_id-down dashicons dashicons-arrow-down select-close"></span>
+                            <label for="categorie_id">
+                                <p>catégories</p>
+                            </label>
+                            <select class="option-filter" name="categorie_id" id="categorie_id">
+                                <!-- Génération automatique de la liste des catégories en fonction de ce qu'il y a dans WP -->
+                                <option id="categorie_0" value=""></option>
+                                <option id="categorie_47" value="47">Anniversaire</option>
+                                <option id="categorie_112" value="112">Essais</option>
+                                <option id="categorie_48" value="48">Evènement</option>
+                                <option id="categorie_49" value="49">Mariage</option>
+                                <option id="categorie_50" value="50">Soirée entreprise</option>
+                            </select>
+                        </div>
+                        <div id="filtre-format" class="select-filter flexcolumn">
+                            <span class="format_id-down dashicons dashicons-arrow-down select-close"></span>
+                            <label for="format_id">
+                                <p>formats</p>
+                            </label>
+                            <select class="option-filter" name="format_id" id="format_id">
+                                <!-- Génération automatique de la liste des formats en fonction de ce qu'il y a dans WP -->
+                                <option id="format_0" value=""></option>
+                                <option id="format_54" value="54">1/1</option>
+                                <option id="format_53" value="53">A4</option>
+                                <option id="format_52" value="52">Paysage</option>
+                                <option id="format_111" value="111">Personnel</option>
+                                <option id="format_51" value="51">Portrait</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filterright swiper-slide flexrow">
+                        <div id="filtre-date" class="select-filter flexcolumn">
+                            <span class="date-down dashicons dashicons-arrow-down select-close"></span>
+                            <label for="date">
+                                <p>trier par</p>
+                            </label>
+                            <select class="option-filter" name="date" id="date">
+                                <option value=""></option>
+                                <option value="desc">nouveauté</option>
+                                <option value="asc">Les plus anciens</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- On vérifie si le résultat de la requête contient des articles -->
+            <article class="publication-list container-news flexrow">
+                <!-- Mise à disposition de JS du tableau contenant toutes les données de la requette et le nombre -->
+                <form>
+                    <input type="hidden" name="total_posts" id="total_posts" value="Array
+(
+    [0] => WP_Post Object
+        (
+            [ID] => 390
+            [post_author] => 4
+            [post_date] => 2023-06-14 10:55:09
+            [post_date_gmt] => 2023-06-14 08:55:09
+            [post_content] => 
+            [post_title] => Essais ajout
+            [post_excerpt] => 
+            [post_status] => publish
+            [comment_status] => closed
+            [ping_status] => closed
+            [post_password] => 
+            [post_name] => essais-ajout
+            [to_ping] => 
+            [pinged] => 
+            [post_modified] => 2023-06-14 10:55:09
+            [post_modified_gmt] => 2023-06-14 08:55:09
+            [post_content_filtered] => 
+            [post_parent] => 0
+            [guid] => https://nathalie-mota.stephane-mouron.fr/?post_type=photo&#038;p=390
+            [menu_order] => 0
+            [post_type] => photo
+            [post_mime_type] => 
+            [comment_count] => 0
+            [filter] => raw
+        )
+
+    [1] => WP_Post Object
+        (
+            [ID] => 244
+            [post_author] => 4
+            [post_date] => 2022-06-07 12:40:08
+            [post_date_gmt] => 2022-06-07 10:40:08
+            [post_content] => 
+            [post_title] => Danses
+            [post_excerpt] => 
+            [post_status] => publish
+            [comment_status] => closed
+            [ping_status] => closed
+            [post_password] => 
+            [post_name] => danses
+            [to_ping] => 
+            [pinged] => 
+            [post_modified] => 2023-06-06 16:08:05
+            [post_modified_gmt] => 2023-06-06 14:08:05
+            [post_content_filtered] => 
+            [post_parent] => 0
+            [guid] => http://127.0.0.1/nathalie-mota/?post_type=photo&#038;p=244
+            [menu_order] => 0
+            [post_type] => photo
+            [post_mime_type] => 
+            [comment_count] => 0
+            [filter] => raw
+        )
+
+    [2] => WP_Post Object
+        (
+            [ID] => 256
+            [post_author] => 4
+            [post_date] => 2022-05-07 12:44:26
+            [post_date_gmt] => 2022-05-07 10:44:26
+            [post_content] => 
+            [post_title] => L'amour sans fin
+            [post_excerpt] => 
+            [post_status] => publish
+            [comment_status] => closed
+            [ping_status] => closed
+            [post_password] => 
+            [post_name] => lamour-sans-fin
+            [to_ping] => 
+            [pinged] => 
+            [post_modified] => 2023-05-10 17:09:55
+            [post_modified_gmt] => 2023-05-10 15:09:55
+            [post_content_filtered] => 
+            [post_parent] => 0
+            [guid] => http://127.0.0.1/nathalie-mota/?post_type=photo&#038;p=256
+            [menu_order] => 0
+            [post_type] => photo
+            [post_mime_type] => 
+            [comment_count] => 0
+            [filter] => raw
+        )
+
+    [3] => WP_Post Object
+        (
+            [ID] => 253
+            [post_author] => 4
+            [post_date] => 2022-05-07 12:43:24
+            [post_date_gmt] => 2022-05-07 10:43:24
+            [post_content] => 
+            [post_title] => Bouquet de la mariée
+            [post_excerpt] => 
+            [post_status] => publish
+            [comment_status] => closed
+            [ping_status] => closed
+            [post_password] => 
+            [post_name] => bouquet-de-la-mariee
+            [to_ping] => 
+            [pinged] => 
+            [post_modified] => 2023-05-10 17:10:23
+            [post_modified_gmt] => 2023-05-10 15:10:23
+            [post_content_filtered] => 
+            [post_parent] => 0
+            [guid] => http://127.0.0.1/nathalie-mota/?post_type=photo&#038;p=253
+            [menu_order] => 0
+            [post_type] => photo
+            [post_mime_type] => 
+            [comment_count] => 0
+            [filter] => raw
+        )
+
+    [4] => WP_Post Object
+        (
+            [ID] => 190
+            [post_author] => 4
+            [post_date] => 2022-05-05 17:53:50
+            [post_date_gmt] => 2022-05-05 15:53:50
+            [post_content] => 
+            [post_title] => Fin de match
+            [post_excerpt] => 
+            [post_status] => publish
+            [comment_status] => closed
+            [ping_status] => closed
+            [post_password] => 
+            [post_name] => fin-de-match-au-stade-monumental-au-perou
+            [to_ping] => 
+            [pinged] => 
+            [post_modified] => 2023-05-10 17:11:23
+            [post_modified_gmt] => 2023-05-10 15:11:23
+            [post_content_filtered] => 
+            [post_parent] => 0
+            [guid] => http://127.0.0.1/nathalie-mota/?post_type=photo&#038;p=190
+            [menu_order] => 0
+            [post_type] => photo
+            [post_mime_type] => 
+            [comment_count] => 0
+            [filter] => raw
+        )
+
+    [5] => WP_Post Object
+        (
+            [ID] => 185
+            [post_author] => 4
+            [post_date] => 2022-05-04 09:51:32
+            [post_date_gmt] => 2022-05-04 07:51:32
+            [post_content] => 
+            [post_title] => Bride's maid
+            [post_excerpt] => 
+            [post_status] => publish
+            [comment_status] => closed
+            [ping_status] => closed
+            [post_password] => 
+            [post_name] => brides-maid
+            [to_ping] => 
+            [pinged] => 
+            [post_modified] => 2023-05-10 17:11:42
+            [post_modified_gmt] => 2023-05-10 15:11:42
+            [post_content_filtered] => 
+            [post_parent] => 0
+            [guid] => http://127.0.0.1/nathalie-mota/?post_type=photo&#038;p=185
+            [menu_order] => 0
+            [post_type] => photo
+            [post_mime_type] => 
+            [comment_count] => 0
+            [filter] => raw
+        )
+
+    [6] => WP_Post Object
+        (
+            [ID] => 247
+            [post_author] => 4
+            [post_date] => 2022-04-22 12:41:21
+            [post_date_gmt] => 2022-04-22 10:41:21
+            [post_content] => 
+            [post_title] => Battle improvisé
+            [post_excerpt] => 
+            [post_status] => publish
+            [comment_status] => closed
+            [ping_status] => closed
+            [post_password] => 
+            [post_name] => battle-improvise
+            [to_ping] => 
+            [pinged] => 
+            [post_modified] => 2023-05-10 17:12:08
+            [post_modified_gmt] => 2023-05-10 15:12:08
+            [post_content_filtered] => 
+            [post_parent] => 0
+            [guid] => http://127.0.0.1/nathalie-mota/?post_type=photo&#038;p=247
+            [menu_order] => 0
+            [post_type] => photo
+            [post_mime_type] => 
+            [comment_count] => 0
+            [filter] => raw
+        )
+
+    [7] => WP_Post Object
+        (
+            [ID] => 250
+            [post_author] => 4
+            [post_date] => 2022-04-01 12:42:24
+            [post_date_gmt] => 2022-04-01 10:42:24
+            [post_content] => 
+            [post_title] => Concert festif
+            [post_excerpt] => 
+            [post_status] => publish
+            [comment_status] => closed
+            [ping_status] => closed
+            [post_password] => 
+            [post_name] => concert-festif
+            [to_ping] => 
+            [pinged] => 
+            [post_modified] => 2023-05-10 17:12:37
+            [post_modified_gmt] => 2023-05-10 15:12:37
+            [post_content_filtered] => 
+            [post_parent] => 0
+            [guid] => http://127.0.0.1/nathalie-mota/?post_type=photo&#038;p=250
+            [menu_order] => 0
+            [post_type] => photo
+            [post_mime_type] => 
+            [comment_count] => 0
+            [filter] => raw
+        )
+
+    [8] => WP_Post Object
+        (
+            [ID] => 241
+            [post_author] => 4
+            [post_date] => 2021-05-07 12:39:07
+            [post_date_gmt] => 2021-05-07 10:39:07
+            [post_content] => 
+            [post_title] => Carnaval en Amérique latine
+            [post_excerpt] => 
+            [post_status] => publish
+            [comment_status] => closed
+            [ping_status] => closed
+            [post_password] => 
+            [post_name] => carnaval-en-amerique-latine
+            [to_ping] => 
+            [pinged] => 
+            [post_modified] => 2023-05-10 17:13:06
+            [post_modified_gmt] => 2023-05-10 15:13:06
+            [post_content_filtered] => 
+            [post_parent] => 0
+            [guid] => http://127.0.0.1/nathalie-mota/?post_type=photo&#038;p=241
+            [menu_order] => 0
+            [post_type] => photo
+            [post_mime_type] => 
+            [comment_count] => 0
+            [filter] => raw
+        )
+
+    [9] => WP_Post Object
+        (
+            [ID] => 232
+            [post_author] => 4
+            [post_date] => 2021-05-07 12:36:12
+            [post_date_gmt] => 2021-05-07 10:36:12
+            [post_content] => 
+            [post_title] => Baisé sous les pétales
+            [post_excerpt] => 
+            [post_status] => publish
+            [comment_status] => closed
+            [ping_status] => closed
+            [post_password] => 
+            [post_name] => baise-sous-les-petales
+            [to_ping] => 
+            [pinged] => 
+            [post_modified] => 2023-05-10 17:13:53
+            [post_modified_gmt] => 2023-05-10 15:13:53
+            [post_content_filtered] => 
+            [post_parent] => 0
+            [guid] => http://127.0.0.1/nathalie-mota/?post_type=photo&#038;p=232
+            [menu_order] => 0
+            [post_type] => photo
+            [post_mime_type] => 
+            [comment_count] => 0
+            [filter] => raw
+        )
+
+    [10] => WP_Post Object
+        (
+            [ID] => 222
+            [post_author] => 4
+            [post_date] => 2021-05-07 12:31:21
+            [post_date_gmt] => 2021-05-07 10:31:21
+            [post_content] => 
+            [post_title] => Electro toute la nuit !
+            [post_excerpt] => 
+            [post_status] => publish
+            [comment_status] => closed
+            [ping_status] => closed
+            [post_password] => 
+            [post_name] => electro-toute-la-nuit
+            [to_ping] => 
+            [pinged] => 
+            [post_modified] => 2023-05-10 17:14:25
+            [post_modified_gmt] => 2023-05-10 15:14:25
+            [post_content_filtered] => 
+            [post_parent] => 0
+            [guid] => http://127.0.0.1/nathalie-mota/?post_type=photo&#038;p=222
+            [menu_order] => 0
+            [post_type] => photo
+            [post_mime_type] => 
+            [comment_count] => 0
+            [filter] => raw
+        )
+
+    [11] => WP_Post Object
+        (
+            [ID] => 235
+            [post_author] => 4
+            [post_date] => 2020-05-07 12:37:09
+            [post_date_gmt] => 2020-05-07 10:37:09
+            [post_content] => 
+            [post_title] => Ouverture du bal
+            [post_excerpt] => 
+            [post_status] => publish
+            [comment_status] => closed
+            [ping_status] => closed
+            [post_password] => 
+            [post_name] => ouverture-du-bal
+            [to_ping] => 
+            [pinged] => 
+            [post_modified] => 2023-05-24 10:30:08
+            [post_modified_gmt] => 2023-05-24 08:30:08
+            [post_content_filtered] => 
+            [post_parent] => 0
+            [guid] => http://127.0.0.1/nathalie-mota/?post_type=photo&#038;p=235
+            [menu_order] => 0
+            [post_type] => photo
+            [post_mime_type] => 
+            [comment_count] => 0
+            [filter] => raw
+        )
+
+    [12] => WP_Post Object
+        (
+            [ID] => 229
+            [post_author] => 4
+            [post_date] => 2020-05-07 12:35:17
+            [post_date_gmt] => 2020-05-07 10:35:17
+            [post_content] => 
+            [post_title] => Le traditionnel kiosque
+            [post_excerpt] => 
+            [post_status] => publish
+            [comment_status] => closed
+            [ping_status] => closed
+            [post_password] => 
+            [post_name] => le-traditionnel-kiosque
+            [to_ping] => 
+            [pinged] => 
+            [post_modified] => 2023-05-10 17:15:18
+            [post_modified_gmt] => 2023-05-10 15:15:18
+            [post_content_filtered] => 
+            [post_parent] => 0
+            [guid] => http://127.0.0.1/nathalie-mota/?post_type=photo&#038;p=229
+            [menu_order] => 0
+            [post_type] => photo
+            [post_mime_type] => 
+            [comment_count] => 0
+            [filter] => raw
+        )
+
+    [13] => WP_Post Object
+        (
+            [ID] => 219
+            [post_author] => 4
+            [post_date] => 2020-05-07 12:30:29
+            [post_date_gmt] => 2020-05-07 10:30:29
+            [post_content] => 
+            [post_title] => 18 ans de mariage
+            [post_excerpt] => 
+            [post_status] => publish
+            [comment_status] => closed
+            [ping_status] => closed
+            [post_password] => 
+            [post_name] => 18-ans-de-mariage
+            [to_ping] => 
+            [pinged] => 
+            [post_modified] => 2023-05-10 17:15:58
+            [post_modified_gmt] => 2023-05-10 15:15:58
+            [post_content_filtered] => 
+            [post_parent] => 0
+            [guid] => http://127.0.0.1/nathalie-mota/?post_type=photo&#038;p=219
+            [menu_order] => 0
+            [post_type] => photo
+            [post_mime_type] => 
+            [comment_count] => 0
+            [filter] => raw
+        )
+
+    [14] => WP_Post Object
+        (
+            [ID] => 238
+            [post_author] => 4
+            [post_date] => 2019-05-07 12:38:15
+            [post_date_gmt] => 2019-05-07 10:38:15
+            [post_content] => 
+            [post_title] => Réception de mariage
+            [post_excerpt] => 
+            [post_status] => publish
+            [comment_status] => closed
+            [ping_status] => closed
+            [post_password] => 
+            [post_name] => reception-de-mariage
+            [to_ping] => 
+            [pinged] => 
+            [post_modified] => 2023-05-10 17:16:29
+            [post_modified_gmt] => 2023-05-10 15:16:29
+            [post_content_filtered] => 
+            [post_parent] => 0
+            [guid] => http://127.0.0.1/nathalie-mota/?post_type=photo&#038;p=238
+            [menu_order] => 0
+            [post_type] => photo
+            [post_mime_type] => 
+            [comment_count] => 0
+            [filter] => raw
+        )
+
+    [15] => WP_Post Object
+        (
+            [ID] => 225
+            [post_author] => 4
+            [post_date] => 2019-05-07 12:32:35
+            [post_date_gmt] => 2019-05-07 10:32:35
+            [post_content] => 
+            [post_title] => Réception
+            [post_excerpt] => 
+            [post_status] => publish
+            [comment_status] => closed
+            [ping_status] => closed
+            [post_password] => 
+            [post_name] => reception
+            [to_ping] => 
+            [pinged] => 
+            [post_modified] => 2023-05-10 17:16:58
+            [post_modified_gmt] => 2023-05-10 15:16:58
+            [post_content_filtered] => 
+            [post_parent] => 0
+            [guid] => http://127.0.0.1/nathalie-mota/?post_type=photo&#038;p=225
+            [menu_order] => 0
+            [post_type] => photo
+            [post_mime_type] => 
+            [comment_count] => 0
+            [filter] => raw
+        )
+
+    [16] => WP_Post Object
+        (
+            [ID] => 216
+            [post_author] => 4
+            [post_date] => 2019-05-07 12:28:24
+            [post_date_gmt] => 2019-05-07 10:28:24
+            [post_content] => 
+            [post_title] => Et la santé bien sûr !
+            [post_excerpt] => 
+            [post_status] => publish
+            [comment_status] => closed
+            [ping_status] => closed
+            [post_password] => 
+            [post_name] => et-la-sante-bien-sur
+            [to_ping] => 
+            [pinged] => 
+            [post_modified] => 2023-05-22 10:23:19
+            [post_modified_gmt] => 2023-05-22 08:23:19
+            [post_content_filtered] => 
+            [post_parent] => 0
+            [guid] => http://127.0.0.1/nathalie-mota/?post_type=photo&#038;p=216
+            [menu_order] => 0
+            [post_type] => photo
+            [post_mime_type] => 
+            [comment_count] => 0
+            [filter] => raw
+        )
+
+)
+" />
+                    <input type="hidden" name="max_pages" id="max_pages" value="3" />
+                    <input type="hidden" name="nb_total_posts" id="nb_total_posts" value="17" />
+                </form>
+                <!-- On parcourt chacun des articles résultant de la requête -->
+
+                <!-- Génération du nombre de photo en fonction de l'option dans WordPress -->
+                <div class="news-info brightness">
+                    <h2 class="info-title">Essais ajout</h2>
+                    <h3 class="info-tax">Essais</h3>
+                    <a href="https://nathalie-mota.stephane-mouron.fr/photo/essais-ajout/"
+                        aria-label="Voir le détail de la photo Essais ajout" alt="Essais ajout"
+                        title="Voir le détail de la photo"><span class="detail-photo"></span></a>
+                    <img width="600" height="400"
+                        src="https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/06/christin-goddard-Wgd0GD1Yc3M-unsplash-1-600x400.jpg"
+                        class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Essais ajout article"
+                        decoding="async" srcset="
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/06/christin-goddard-Wgd0GD1Yc3M-unsplash-1-600x400.jpg    600w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/06/christin-goddard-Wgd0GD1Yc3M-unsplash-1-300x200.jpg    300w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/06/christin-goddard-Wgd0GD1Yc3M-unsplash-1-1024x683.jpg  1024w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/06/christin-goddard-Wgd0GD1Yc3M-unsplash-1-768x512.jpg    768w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/06/christin-goddard-Wgd0GD1Yc3M-unsplash-1-1536x1024.jpg 1536w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/06/christin-goddard-Wgd0GD1Yc3M-unsplash-1-2048x1365.jpg 2048w
+            " sizes="(max-width: 600px) 100vw, 600px" />
+                    <p>
+                        <a href="https://nathalie-mota.stephane-mouron.fr/categorie-acf/essais/" rel="tag">Essais</a>
+                    </p>
+                    <form>
+                        <input type="hidden" name="postid" class="postid" value="390" />
+
+                        <a class="openLightbox" title="Afficher la photo en plein écran"
+                            alt="Afficher la photo en plein écran" data-postid="390" data-arrow="true">
+                        </a>
+                    </form>
+                </div>
+
+                <!-- Génération du nombre de photo en fonction de l'option dans WordPress -->
+                <div class="news-info brightness">
+                    <h2 class="info-title">Danses</h2>
+                    <h3 class="info-tax">Mariage</h3>
+                    <a href="https://nathalie-mota.stephane-mouron.fr/photo/danses/"
+                        aria-label="Voir le détail de la photo Danses" alt="Danses"
+                        title="Voir le détail de la photo"><span class="detail-photo"></span></a>
+                    <img width="600" height="400"
+                        src="https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-9-scaled.jpeg"
+                        class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                        alt="Photo mariage Mitchell Orr" decoding="async" srcset="
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-9-scaled.jpeg    2560w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-9-300x200.jpeg    300w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-9-1024x683.jpeg  1024w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-9-768x512.jpeg    768w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-9-1536x1024.jpeg 1536w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-9-2048x1365.jpeg 2048w
+            " sizes="(max-width: 600px) 100vw, 600px" />
+                    <p>
+                        <a href="https://nathalie-mota.stephane-mouron.fr/categorie-acf/mariage-acf/"
+                            rel="tag">Mariage</a>
+                    </p>
+                    <form>
+                        <input type="hidden" name="postid" class="postid" value="244" />
+
+                        <a class="openLightbox" title="Afficher la photo en plein écran"
+                            alt="Afficher la photo en plein écran" data-postid="244" data-arrow="true">
+                        </a>
+                    </form>
+                </div>
+
+                <!-- Génération du nombre de photo en fonction de l'option dans WordPress -->
+                <div class="news-info brightness">
+                    <h2 class="info-title">L&rsquo;amour sans fin</h2>
+                    <h3 class="info-tax">Mariage</h3>
+                    <a href="https://nathalie-mota.stephane-mouron.fr/photo/lamour-sans-fin/"
+                        aria-label="Voir le détail de la photo L&rsquo;amour sans fin" alt="L&rsquo;amour sans fin"
+                        title="Voir le détail de la photo"><span class="detail-photo"></span></a>
+                    <img width="600" height="900"
+                        src="https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-14-scaled.jpeg"
+                        class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                        alt="Photo mariage de Vadim Paripa" decoding="async" srcset="
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-14-scaled.jpeg    1707w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-14-200x300.jpeg    200w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-14-683x1024.jpeg   683w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-14-768x1152.jpeg   768w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-14-1024x1536.jpeg 1024w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-14-1365x2048.jpeg 1365w
+            " sizes="(max-width: 600px) 100vw, 600px" />
+                    <p>
+                        <a href="https://nathalie-mota.stephane-mouron.fr/categorie-acf/mariage-acf/"
+                            rel="tag">Mariage</a>
+                    </p>
+                    <form>
+                        <input type="hidden" name="postid" class="postid" value="256" />
+
+                        <a class="openLightbox" title="Afficher la photo en plein écran"
+                            alt="Afficher la photo en plein écran" data-postid="256" data-arrow="true">
+                        </a>
+                    </form>
+                </div>
+
+                <!-- Génération du nombre de photo en fonction de l'option dans WordPress -->
+                <div class="news-info brightness">
+                    <h2 class="info-title">Bouquet de la mariée</h2>
+                    <h3 class="info-tax">Mariage</h3>
+                    <a href="https://nathalie-mota.stephane-mouron.fr/photo/bouquet-de-la-mariee/"
+                        aria-label="Voir le détail de la photo Bouquet de la mariée" alt="Bouquet de la mariée"
+                        title="Voir le détail de la photo"><span class="detail-photo"></span></a>
+                    <img width="600" height="900"
+                        src="https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-13-scaled.jpeg"
+                        class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                        alt="Photo mariage de Tom the photographer" decoding="async" srcset="
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-13-scaled.jpeg    1707w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-13-200x300.jpeg    200w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-13-683x1024.jpeg   683w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-13-768x1152.jpeg   768w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-13-1024x1536.jpeg 1024w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-13-1365x2048.jpeg 1365w
+            " sizes="(max-width: 600px) 100vw, 600px" />
+                    <p>
+                        <a href="https://nathalie-mota.stephane-mouron.fr/categorie-acf/mariage-acf/"
+                            rel="tag">Mariage</a>
+                    </p>
+                    <form>
+                        <input type="hidden" name="postid" class="postid" value="253" />
+
+                        <a class="openLightbox" title="Afficher la photo en plein écran"
+                            alt="Afficher la photo en plein écran" data-postid="253" data-arrow="true">
+                        </a>
+                    </form>
+                </div>
+
+                <!-- Génération du nombre de photo en fonction de l'option dans WordPress -->
+                <div class="news-info brightness">
+                    <h2 class="info-title">Fin de match</h2>
+                    <h3 class="info-tax">Evènement</h3>
+                    <a href="https://nathalie-mota.stephane-mouron.fr/photo/fin-de-match-au-stade-monumental-au-perou/"
+                        aria-label="Voir le détail de la photo Fin de match" alt="Fin de match"
+                        title="Voir le détail de la photo"><span class="detail-photo"></span></a>
+                    <img width="600" height="450"
+                        src="https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-10-scaled.jpeg"
+                        class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                        alt="Photo fin de match au Pérou" decoding="async" srcset="
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-10-scaled.jpeg    2560w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-10-300x225.jpeg    300w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-10-1024x768.jpeg  1024w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-10-768x576.jpeg    768w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-10-1536x1152.jpeg 1536w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-10-2048x1536.jpeg 2048w
+            " sizes="(max-width: 600px) 100vw, 600px" />
+                    <p>
+                        <a href="https://nathalie-mota.stephane-mouron.fr/categorie-acf/evenement-acf/"
+                            rel="tag">Evènement</a>
+                    </p>
+                    <form>
+                        <input type="hidden" name="postid" class="postid" value="190" />
+
+                        <a class="openLightbox" title="Afficher la photo en plein écran"
+                            alt="Afficher la photo en plein écran" data-postid="190" data-arrow="true">
+                        </a>
+                    </form>
+                </div>
+
+                <!-- Génération du nombre de photo en fonction de l'option dans WordPress -->
+                <div class="news-info brightness">
+                    <h2 class="info-title">Bride&rsquo;s maid</h2>
+                    <h3 class="info-tax">Mariage</h3>
+                    <a href="https://nathalie-mota.stephane-mouron.fr/photo/brides-maid/"
+                        aria-label="Voir le détail de la photo Bride&rsquo;s maid" alt="Bride&rsquo;s maid"
+                        title="Voir le détail de la photo"><span class="detail-photo"></span></a>
+                    <img width="600" height="899"
+                        src="https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-15-scaled.jpeg"
+                        class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                        alt="Photo enterrement de vie de jeune fille" decoding="async" srcset="
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-15-scaled.jpeg    1709w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-15-200x300.jpeg    200w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-15-684x1024.jpeg   684w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-15-768x1150.jpeg   768w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-15-1025x1536.jpeg 1025w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-15-1367x2048.jpeg 1367w
+            " sizes="(max-width: 600px) 100vw, 600px" />
+                    <p>
+                        <a href="https://nathalie-mota.stephane-mouron.fr/categorie-acf/mariage-acf/"
+                            rel="tag">Mariage</a>
+                    </p>
+                    <form>
+                        <input type="hidden" name="postid" class="postid" value="185" />
+
+                        <a class="openLightbox" title="Afficher la photo en plein écran"
+                            alt="Afficher la photo en plein écran" data-postid="185" data-arrow="true">
+                        </a>
+                    </form>
+                </div>
+
+                <!-- Génération du nombre de photo en fonction de l'option dans WordPress -->
+                <div class="news-info brightness">
+                    <h2 class="info-title">Battle improvisé</h2>
+                    <h3 class="info-tax">Evènement</h3>
+                    <a href="https://nathalie-mota.stephane-mouron.fr/photo/battle-improvise/"
+                        aria-label="Voir le détail de la photo Battle improvisé" alt="Battle improvisé"
+                        title="Voir le détail de la photo"><span class="detail-photo"></span></a>
+                    <img width="600" height="401"
+                        src="https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-11-scaled.jpeg"
+                        class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                        alt="Photo battle de danse improvisé" decoding="async" srcset="
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-11-scaled.jpeg    2560w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-11-300x200.jpeg    300w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-11-1024x684.jpeg  1024w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-11-768x513.jpeg    768w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-11-1536x1025.jpeg 1536w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-11-2048x1367.jpeg 2048w
+            " sizes="(max-width: 600px) 100vw, 600px" />
+                    <p>
+                        <a href="https://nathalie-mota.stephane-mouron.fr/categorie-acf/evenement-acf/"
+                            rel="tag">Evènement</a>
+                    </p>
+                    <form>
+                        <input type="hidden" name="postid" class="postid" value="247" />
+
+                        <a class="openLightbox" title="Afficher la photo en plein écran"
+                            alt="Afficher la photo en plein écran" data-postid="247" data-arrow="true">
+                        </a>
+                    </form>
+                </div>
+
+                <!-- Génération du nombre de photo en fonction de l'option dans WordPress -->
+                <div class="news-info brightness">
+                    <h2 class="info-title">Concert festif</h2>
+                    <h3 class="info-tax">Evènement</h3>
+                    <a href="https://nathalie-mota.stephane-mouron.fr/photo/concert-festif/"
+                        aria-label="Voir le détail de la photo Concert festif" alt="Concert festif"
+                        title="Voir le détail de la photo"><span class="detail-photo"></span></a>
+                    <img width="600" height="400"
+                        src="https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-12-scaled.jpeg"
+                        class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Photo concert festif"
+                        decoding="async" srcset="
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-12-scaled.jpeg    2560w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-12-300x200.jpeg    300w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-12-1024x683.jpeg  1024w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-12-768x512.jpeg    768w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-12-1536x1024.jpeg 1536w,
+              https://nathalie-mota.stephane-mouron.fr/wp-content/uploads/2023/05/nathalie-12-2048x1365.jpeg 2048w
+            " sizes="(max-width: 600px) 100vw, 600px" />
+                    <p>
+                        <a href="https://nathalie-mota.stephane-mouron.fr/categorie-acf/evenement-acf/"
+                            rel="tag">Evènement</a>
+                    </p>
+                    <form>
+                        <input type="hidden" name="postid" class="postid" value="250" />
+
+                        <a class="openLightbox" title="Afficher la photo en plein écran"
+                            alt="Afficher la photo en plein écran" data-postid="250" data-arrow="true">
+                        </a>
+                    </form>
+                </div>
+            </article>
+            <div class="lightbox hidden" id="lightbox">
+                <button class="lightbox__close" title="Refermer cet agrandissement">
+                    Fermer
+                </button>
+                <div class="lightbox__container">
+                    <div class="lightbox__loader hidden"></div>
+                    <div class="lightbox__container_info flexcolumn" id="lightbox__container_info">
+                        <div class="lightbox__container_content flexcolumn" id="lightbox__container_content"></div>
+                        <button class="lightbox__next" aria-label="Voir la photo suivante"
+                            title="Photo suivante"></button>
+                        <button class="lightbox__prev" aria-label="Voir la photo précente" title="Photo précédente">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pagination">
+                <!-- afficher le système de pagination (s’il existe de nombreux articles) -->
+                <!-- <h3>Articles suivants</h3> -->
+                <!-- Variables qui vont pourvoir être récupérées par JavaScript -->
+                <form>
+                    <input type="hidden" name="orderby" id="orderby" value="date" />
+                    <input type="hidden" name="order" id="order" value="" />
+                    <input type="hidden" name="posts_per_page" id="posts_per_page" value="8" />
+                    <input type="hidden" name="currentPage" id="currentPage" value="1" />
+                    <input type="hidden" name="ajaxurl" id="ajaxurl"
+                        value="https://nathalie-mota.stephane-mouron.fr/wp-admin/admin-ajax.php" />
+                    <!-- c’est un jeton de sécurité, pour s’assurer que la requête provient bien de ce site, et pas d’un autre -->
+                    <input type="hidden" name="nonce" id="nonce" value="f7debe660b" />
+                    <!-- On cache le bouton s'il n'y a pas plus d'1 page -->
+                    <button class="btn_load-more" id="load-more">Charger plus</button>
+                    <span class="camera"></span>
+                </form>
+            </div>
+        </section>
+    </div>
+    <footer id="footer">
+        <div class="menu-footer-menu-container">
+            <ul id="menu-footer-menu" class="menu">
+                <li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31">
+                    <a href="https://nathalie-mota.stephane-mouron.fr/mentions-legales/">Mentions légales</a>
+                </li>
+                <li id="menu-item-325"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-325">
+                    <a rel="privacy-policy"
+                        href="https://nathalie-mota.stephane-mouron.fr/politique-de-confidentialite/">Vie privée</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Ajout du widget dans le pied de page -->
+        <aside id="widget-area">
+            <div id="block-9" class="widget widget_block widget_text">
+                <p class="has-text-align-center">Tous droits réservés</p>
+            </div>
+        </aside>
+    </footer>
+
+    <!-- Lance la popup contact -->
+
+    <div class="popup-overlay hidden">
+        <div class="popup-contact">
+            <div class="popup-title__container">
+                <!-- <img class="popup-close" src="https://nathalie-mota.stephane-mouron.fr/wp-content/themes/nathalie-mota/assets/img/contact.png" alt="Page contact">		 -->
+                <div class="popup-title"></div>
+                <div class="popup-title"></div>
+            </div>
+            <div class="popup-informations">
+                <div class="wpcf7 no-js" id="wpcf7-f32-o1" lang="fr-FR" dir="ltr">
+                    <div class="screen-reader-response">
+                        <p role="status" aria-live="polite" aria-atomic="true"></p>
+                        <ul></ul>
+                    </div>
+                    <form action="/#wpcf7-f32-o1" method="post" class="wpcf7-form init"
+                        aria-label="Formulaire de contact" novalidate="novalidate" data-status="init">
+                        <div style="display: none">
+                            <input type="hidden" name="_wpcf7" value="32" />
+                            <input type="hidden" name="_wpcf7_version" value="5.8.2" />
+                            <input type="hidden" name="_wpcf7_locale" value="fr_FR" />
+                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f32-o1" />
+                            <input type="hidden" name="_wpcf7_container_post" value="0" />
+                            <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+                        </div>
+                        <p>
+                            <label>Nom<br />
+                                <span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40"
+                                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                        autocomplete="name" aria-required="true" aria-invalid="false" value=""
+                                        type="text" name="your-name" /></span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>E-Mail<br />
+                                <span class="wpcf7-form-control-wrap" data-name="your-email"><input size="40"
+                                        class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
+                                        autocomplete="email" aria-required="true" aria-invalid="false" value=""
+                                        type="email" name="your-email" /></span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>Réf. Photo<br />
+                                <span class="wpcf7-form-control-wrap" data-name="your-subject"><input size="40"
+                                        class="wpcf7-form-control wpcf7-text refPhoto" aria-invalid="false" value=""
+                                        type="text" name="your-subject" /></span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>Message<br />
+                                <span class="wpcf7-form-control-wrap" data-name="your-message">
+                                    <textarea cols="40" rows="10"
+                                        class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
+                                        aria-required="true" aria-invalid="false" name="your-message"></textarea>
+                                </span>
+                            </label>
+                        </p>
+                        <p>
+                            <button class="btn__contact-form-7">
+                                <input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit"
+                                    value="Envoyer" />
+                            </button>
+                        </p>
+                        <div class="wpcf7-response-output" aria-hidden="true"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

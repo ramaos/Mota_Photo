@@ -1,0 +1,19 @@
+@keyframes lightboxIn {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/********* translate du menu burger  ***********/
+@keyframes burgerIn {
+    0% {
+        transform: translateY(-130%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-1%);
+        opacity: 1;
+    }
+}
