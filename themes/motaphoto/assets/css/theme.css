@@ -287,10 +287,11 @@
 }
 .lightbox__next:hover {
   opacity: 1;
+  width: 101px;
 }
 .lightbox__prev {
   background: url("../images/Navigation_arrow_left.png") center center/100% 100% no-repeat;
-  width: 92px;
+  width: 107px;
   height: 18px;
   position: fixed;
   top: 50%;
@@ -303,6 +304,7 @@
 }
 .lightbox__prev:hover {
   opacity: 1;
+  width: 116px;
 }
 .lightbox__close {
   position: fixed;
@@ -354,6 +356,16 @@
 .filter .select {
   width: 260px;
   height: 43px;
+}
+.filter .select:hover {
+  background: #FFD6D6;
+}
+.filter .select option:checked {
+  background-color: #E00000;
+  color: #fff;
+}
+.filter .select:active {
+  background-color: #FE5858;
 }
 
 /* *******   post single    ******* */
@@ -448,6 +460,10 @@ body {
   letter-spacing: 0em;
   cursor: pointer;
 }
+.contact-single__form--btn:hover {
+  color: #fff;
+  background-color: #000;
+}
 .contact-single__thumbnail {
   position: relative;
 }
@@ -500,6 +516,10 @@ body {
   line-height: 18px;
   letter-spacing: 0em;
   cursor: pointer;
+}
+.post-single__photos--btn .bouton:hover {
+  color: #fff;
+  background-color: #000;
 }
 
 .post {
@@ -622,28 +642,35 @@ body {
   opacity: 1;
 }
 
-/******  pagination   * *****/
-#pagination {
-  display: flex;
-  justify-content: center;
-}
-
 /****       bouton chargement plus      ******/
-.container__btn {
+.ajaxBtn {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-.container__btn .btn {
+.ajaxBtn__container {
+  width: 272px;
+  height: 50px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.ajaxBtn__container--btn {
   width: 272px;
   height: 50px;
   border-radius: 2px;
   border: none;
+  color: #000;
   background-color: #d8d8d8;
   font-size: 12px;
   font-weight: 400;
   line-height: 17.77px;
   cursor: pointer;
+  z-index: 10;
+}
+.ajaxBtn__container--btn:hover {
+  background-color: #000;
+  color: white;
 }
 
 /*******    footer      *******/

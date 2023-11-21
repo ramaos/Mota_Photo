@@ -19,7 +19,6 @@ body {
 .section{
   width: 1148px;
   margin: 0 auto;
-
 }
 
 
@@ -115,28 +114,61 @@ gap: 20px;
 }
 
 
-/******  pagination   * *****/
-#pagination{
-  @include rawCenter
-}
-
 /****       bouton chargement plus      ******/
 
-.container__btn{
+.ajaxBtn{
   @include rawCenter;
   margin-bottom: 50px;
-  .btn{
+  &__container{
     width: 272px;
     height: 50px;
-    border-radius: 2px;
-    border: none;
-    background-color: #d8d8d8;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 17.77px;
-    cursor: pointer;
+    position:relative;
+    display:inline-block;
+    overflow:hidden;
+    
+    // &::after{
+    //   content:'';
+    //   display:block;
+    //   position:absolute;
+    //   bottom:0;
+    //   top:0;
+    //   left:0;
+    //   right:0;
+    //   z-index:1;
+    //   background-color: #000;
+    //   transition :  0.35s ease-in-out;
+    //   transition-property : top, bottom, left,right, border-width;
+    //   right: 100%;
+    //   opacity: 0.5;
+    // }
+    // &:hover:after{
+    //   right: 0;
+    // &:hover .ajaxBtn__container--btn{
+    //   color: ;
+    // }
+    // }
+    &--btn{
+      width: 272px;
+      height: 50px;
+      border-radius: 2px;
+      border: none;
+      color: #000;
+      background-color: #d8d8d8;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 17.77px;
+      cursor: pointer;
+      z-index: 10;
+      &:hover{
+        background-color: #000;
+        color: #ffff;
+      }
+    }
   }
 }
+
+  
+
 /*******    footer      *******/
 .site__footer {
   width: 1440px;

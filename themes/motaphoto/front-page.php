@@ -50,10 +50,12 @@
 
         ?>
     </div>
-    <div class="container__btn">
-        <button id="ajax_call_1" type="button" class="btn">
-            <?php _e('Charger plus', 'cookinfamily'); ?>
-        </button>
+    <div class="ajaxBtn">
+        <div class="ajaxBtn__container">
+            <button id="ajax_call" type="button" class="ajaxBtn__container--btn">
+                <?php _e('Charger plus', 'cookinfamily'); ?>
+            </button>
+        </div>
     </div>
 
 </section>

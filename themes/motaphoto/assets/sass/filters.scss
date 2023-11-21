@@ -15,5 +15,15 @@
 .select{
     width: 260px;
     height: 43px;
+    &:hover{
+        background: #FFD6D6;
+    }
+    & option:checked{
+        background-color: #E00000;
+        color: #fff;      
+    }
+    &:active{
+        background-color: #FE5858;
+}
 }
 }

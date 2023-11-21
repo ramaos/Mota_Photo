@@ -160,7 +160,7 @@
 (function ($) {
   $(document).ready(function () {
     let page = 3;
-    $(document).on("click", "#ajax_call_1", function (e) {
+    $(document).on("click", "#ajax_call", function (e) {
       e.preventDefault();
       console.log("coucou");
       $.ajax({

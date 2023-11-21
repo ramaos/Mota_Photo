@@ -37,12 +37,13 @@
 
         &:hover {
             opacity: 1;
+            width: 101px;
         }
     }
 
     &__prev {
         background: url('../images/Navigation_arrow_left.png') center center/ 100% 100% no-repeat;
-        width: 92px;
+        width: 107px;
         height: 18px;
         position: fixed;
         top: 50%;
@@ -55,6 +56,7 @@
 
         &:hover {
             opacity: 1;
+            width: 116px;
         }
     }
 

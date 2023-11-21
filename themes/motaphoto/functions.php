@@ -5,10 +5,7 @@ function motaphoto_register_assets() // fonction de chargement des styles et scr
     wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css', [], MOTAPHOTO_VERSION, 'all');
     wp_enqueue_style('animate-style', get_template_directory_uri() . '/assets/css/animate.min.css', [], '4.1.1');
     wp_enqueue_style('motaphoto-style', get_stylesheet_directory_uri() . '/assets/css/theme.css', ['animate-style'], filemtime(get_stylesheet_directory() . '/assets/css/theme.css'), 'all');
-    //wp_enqueue_script('bootstrap-JS', get_template_directory_uri() . '/assets/js/bootstrapJS.min.js', ['jquery'], '5.3.2', true);
-
     wp_enqueue_script('lightbox-script', get_template_directory_uri() . '/assets/js/lightbox.js', ['jquery'], filemtime(get_stylesheet_directory() . '/assets/js/lightbox.js'), true); // script affichage plus
-
     wp_enqueue_script('motaphoto-script', get_template_directory_uri() . '/assets/js/theme-script.js', ['jquery'], filemtime(get_stylesheet_directory() . '/assets/js/theme-script.js'), true);
     // ===================   script ajax ===========================//
     if (is_front_page()) {

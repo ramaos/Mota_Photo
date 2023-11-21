@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import "libs/mixins.scss";
+
 /* *******   post single    ******* */
 body {
     width: 1440px;
@@ -11,7 +12,8 @@ body {
 .content-single {
     width: 1148px;
     margin: 0 auto;
-    @media all and (max-width: 700px){
+
+    @media all and (max-width: 700px) {
         @include columnCenter
     }
 }
@@ -20,8 +22,9 @@ body {
     @include rawBetween;
     align-items: flex-end;
     margin-top: 50px;
-    @media all and (max-width: 700px){
-flex-flow: column-reverse;
+
+    @media all and (max-width: 700px) {
+        flex-flow: column-reverse;
     }
 
     &--info {
@@ -49,6 +52,7 @@ flex-flow: column-reverse;
         }
     }
 }
+
 .contact-single {
     @include rawBetween;
     border-bottom: solid 1px #000;
@@ -59,9 +63,11 @@ flex-flow: column-reverse;
         width: 564px;
         @include rawBetween;
         align-items: center;
-        @media all and (max-width: 700px){
+
+        @media all and (max-width: 700px) {
             @include columnCenter
         }
+
         p {
             font-family: 'Poppins', sans-serif;
             ;
@@ -84,12 +90,18 @@ flex-flow: column-reverse;
             line-height: 18px;
             letter-spacing: 0em;
             cursor: pointer;
+
+            &:hover {
+                color: #fff;
+                background-color: #000;
+            }
         }
     }
 
     &__thumbnail {
         position: relative;
-        @media all and (max-width: 700px){
+
+        @media all and (max-width: 700px) {
             display: none;
         }
 
@@ -108,23 +120,26 @@ flex-flow: column-reverse;
 }
 
 .post-single__photos {
-    @media all and (max-width: 700px){
+    @media all and (max-width: 700px) {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     &--other {
         @include rawBetween;
-        @media all and (max-width: 700px){
+
+        @media all and (max-width: 700px) {
             flex-flow: column;
         }
     }
 
     &--btn {
         @include rawCenter;
-margin-top: 50px;
-margin-bottom: 50px;
-        .bouton{
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        .bouton {
             width: 272px;
             height: 50px;
             border: none;
@@ -135,6 +150,10 @@ margin-bottom: 50px;
             line-height: 18px;
             letter-spacing: 0em;
             cursor: pointer;
+            &:hover{
+                color: #fff;
+                background-color: #000;
+            }
         }
     }
 }

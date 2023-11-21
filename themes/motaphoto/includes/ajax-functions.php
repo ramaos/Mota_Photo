@@ -132,7 +132,7 @@ function filtre_des_posts()
     } elseif ($order) {
         $args = array(
             'post_type' => 'cif_photo',
-            'posts_per_page' => -1,
+            'posts_per_page' => 8,
             'orderby' => 'date',
             'order' => $order,
         );
