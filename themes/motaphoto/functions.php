@@ -7,15 +7,15 @@ function motaphoto_register_assets() // fonction de chargement des styles et scr
     wp_enqueue_style('motaphoto-style', get_stylesheet_directory_uri() . '/assets/css/theme.css', ['animate-style'], filemtime(get_stylesheet_directory() . '/assets/css/theme.css'), 'all');
     wp_enqueue_script('lightbox-script', get_template_directory_uri() . '/assets/js/lightbox.js', ['jquery'], filemtime(get_stylesheet_directory() . '/assets/js/lightbox.js'), true); // script affichage plus
     wp_enqueue_script('motaphoto-script', get_template_directory_uri() . '/assets/js/theme-script.js', ['jquery'], filemtime(get_stylesheet_directory() . '/assets/js/theme-script.js'), true);
-    // ===================   script ajax ===========================//
+    // script ajax
     if (is_front_page()) {
-        wp_enqueue_script('ajax-script-1', get_template_directory_uri() . '/assets/js/ajax-affichage-plus.js', ['jquery'], filemtime(get_stylesheet_directory() . '/assets/js/ajax-affichage-plus.js'), true);
+        wp_enqueue_script('ajax-script', get_template_directory_uri() . '/assets/js/ajax-affichage-plus.js', ['jquery'], filemtime(get_stylesheet_directory() . '/assets/js/ajax-affichage-plus.js'), true);
     } // script affichage plus
-    wp_localize_script('ajax-script-1', 'ajaxVars', ['url' => admin_url('admin-ajax.php')]); // methode-2- chargement ajax url
+    wp_localize_script('ajax-script', 'ajaxVars', ['url' => admin_url('admin-ajax.php')]); // methode-2- chargement ajax url
 
 } // fin de la fonction de chargement des styles et scripts
 
-function motaphoto_supports() // fonction du themes supports
+function motaphoto_supports() // fonction du theme supports
 {
     add_theme_support('title-tag'); // affichage de la balise titre
     require_once('includes/class-wp-bootstrap-navwalker.php'); // ajout de la bibliotheque navwalker de bootstrap
@@ -64,11 +64,11 @@ add_filter('nav_menu_css_class', 'motaphoto_menu_class'); // ajout des class des
 add_filter('nav_menu_link_attributes', 'motaphoto_menu_link_class'); // ajout des class des liens 
 
 //=================================================
-//           methode 1-chargement ajax url
+//         fonctions Ajax
 //=================================================
 include('includes/ajax-functions.php');
 
 //=================================================
-//           methode 1-chargement ajax url
+//           post type et taxonomie
 //=================================================
 include('includes/cpt-taxonomie-function.php');

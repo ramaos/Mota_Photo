@@ -7,7 +7,8 @@
   height: 80px;
   position: sticky;
   top: 0;
-
+  -webkit-box-shadow: 0px 11px 12px -7px rgba(126, 126, 126, 0.226); 
+  box-shadow: 0px 11px 12px -7px rgba(126, 126, 126, 0.226); 
 }
 
 .navbar {
