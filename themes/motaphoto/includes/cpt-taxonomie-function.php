@@ -33,7 +33,7 @@ function motaphoto_register_custom_post_types() // fonction post type
     register_post_type('cif_photo', $args_photos);
 } // fin de la fonction post type
 
-function motaphoto_register_taxonomies_categorie_photo() // fontion type de poste
+function motaphoto_register_taxonomies_categorie_photo() // fontion taxonomie categorie
 {
 
     $labels = array(
@@ -62,8 +62,9 @@ function motaphoto_register_taxonomies_categorie_photo() // fontion type de post
         'rewrite'           => array('slug' => 'categorie')
     );
     register_taxonomy('categorie', 'cif_photo', $args);
-} // fin de la fonction type de poste
-function motaphoto_register_taxonomies_format_photo()
+} // fin de la fonction taxonomie categorie 
+
+function motaphoto_register_taxonomies_format_photo() // fonction taxonomie format
 {
     $labels = array(
         'name'              => __('Format de photo'),
@@ -90,8 +91,9 @@ function motaphoto_register_taxonomies_format_photo()
         'rewrite'           => array('slug' => 'format')
     );
     register_taxonomy('format', 'cif_photo', $args);
-}
-function motaphoto_register_taxonomies_type_photo()
+} // fin de la fonction taxonomie format
+
+function motaphoto_register_taxonomies_type_photo() // fonction de la taxonomie type
 {
     $labels = array(
         'name'              => __('Type de photo'),
@@ -120,7 +122,7 @@ function motaphoto_register_taxonomies_type_photo()
         'capabilities'      => ['edit_terms']
     );
     register_taxonomy('type', 'cif_photo', $args);
-}
+} // fin de la fonction de la taxonomie type
 
 function motaphoto_col_change($columns)  //  ordre et image affichée dans l'administration post type "photo" 
 {
@@ -140,11 +142,6 @@ function motaphoto_content_show($column, $post_id) // affichage de l'ordre et de
 }
 function motaphoto_change_order_photo($columns) // changement d'ordre des posts sur l'administration post type "photo"
 {
-    //     global $post_type, $pagenow;
-    //     if ($pagenow == 'edit.php' && $post_type == 'cif_photo') {
-    //         $query->query_vars['orderby'] = 'menu_order';
-    //         $query->query_vars['order'] = 'asc';
-    //     }
     $columns['motaphoto_photo_image_order'] = 'menu-order';
     return $columns;
 }
@@ -153,8 +150,7 @@ function motaphoto_change_order_photo($columns) // changement d'ordre des posts 
 add_action('init', 'motaphoto_register_custom_post_types', 11); // enregistrement de custom post type "photos"
 add_action('init', 'motaphoto_register_taxonomies_categorie_photo');  // enregistrement de la taxonomie custum post type "type de photos"
 add_action('init', 'motaphoto_register_taxonomies_format_photo');  // enregistrement de la taxonomie custum post type "format de photos"
-add_action('init', 'motaphoto_register_taxonomies_type_photo');
+add_action('init', 'motaphoto_register_taxonomies_type_photo');  // enregistrement de la taxonomie custum post type "type de photos"
 add_filter('manage_edit-cif_photo_columns', 'motaphoto_col_change'); // ordre et image affichée dans l'administration post type "photo"
 add_action('manage_cif_photo_posts_custom_column', 'motaphoto_content_show', 10, 2); // affichage de l'ordre et de l'image dans l'administration post type "photo"
-//add_action('pre_get_posts', 'motaphoto_change_order_photo');
 add_filter('manage_edit-cif_photo_sortable_columns', 'motaphoto_change_order_photo'); // cargement changement d'ordre des posts sur l'administration post type "photo"

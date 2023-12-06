@@ -14,24 +14,11 @@
         <?php
         while ($motaphoto_query->have_posts()) :
             $motaphoto_query->the_post();
-            //$thumbnail_html = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'header_image');
-            // $thumbnail_src = $thumbnail_html['0'];
-            // $alt = get_post_meta(get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt');
-            // $alt = $alt[0];
-            // if ($active) {
-            //     $class = ' active';
-            // } else {
-            //     $class = '';
-            // }
         ?>
-
             <a href="<?php the_permalink(); ?>">
-                <?php the_post_thumbnail('header_image', ['class' => 'header__header']); ?>
-                <!-- <img src="<?php echo $thumbnail_src; ?>" alt="<?php echo $alt; ?> "> -->
+                <?php the_post_thumbnail('header-image', ['class' => 'header__header']); ?>
                 <h1 class="header__title animate__animated animate__zoomIn">PHOTOGRAPHE EVENT</h1>
             </a>
-            <!-- </div> -->
-
         <?php
         endwhile; ?>
     <?php endif;
@@ -46,8 +33,8 @@
     ?>
 
     <div class="container" id="container">
-        <?php get_template_part('template-parts/content-photo');
-
+        <?php
+        get_template_part('template-parts/content-photo');
         ?>
     </div>
     <div class="ajaxBtn">

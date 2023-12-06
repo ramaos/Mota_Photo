@@ -2,11 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import "libs/mixins.scss";
 @import "libs/animation.scss";
-@import './header';
-@import './lightbox';
-@import './filters';
-@import './post-single';
-@import './home';
+
 
 
 body {
@@ -20,6 +16,12 @@ body {
   margin: 0 auto;
 }
 
+@import './header';
+@import './lightbox';
+@import './filters';
+@import './post-single';
+@import './home';
+
 /*****  container posts    ******/
 .container {
   display: flex;
@@ -32,8 +34,8 @@ body {
   @media all and (max-width: 700px) {
     flex-direction: column;
     align-items: center;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   &__posts {
@@ -42,7 +44,7 @@ body {
     .icon_eye {
       position: absolute;
       width: 46px;
-      height: 31.2;
+      height: 31.2px;
       left: 45%;
       top: 45%;
       cursor: pointer;
@@ -131,27 +133,7 @@ body {
     display: inline-block;
     overflow: hidden;
 
-    // &::after{
-    //   content:'';
-    //   display:block;
-    //   position:absolute;
-    //   bottom:0;
-    //   top:0;
-    //   left:0;
-    //   right:0;
-    //   z-index:1;
-    //   background-color: #000;
-    //   transition :  0.35s ease-in-out;
-    //   transition-property : top, bottom, left,right, border-width;
-    //   right: 100%;
-    //   opacity: 0.5;
-    // }
-    // &:hover:after{
-    //   right: 0;
-    // &:hover .ajaxBtn__container--btn{
-    //   color: ;
-    // }
-    // }
+
     &--btn {
       width: 272px;
       height: 50px;
@@ -181,8 +163,11 @@ body {
 
   .footer__nav {
     width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+    @include rawEvenly;
     align-items: center;
+
+    @media all and (max-width: 700px) {
+      @include columnCenter;
+    }
   }
 }

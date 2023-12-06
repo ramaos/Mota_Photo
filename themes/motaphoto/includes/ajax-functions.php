@@ -3,26 +3,6 @@
 //==============  fonction pour afficher plus de photos  ===========//
 function afficher_plus()
 {
-    //     $args = [
-    //         'post_type' => 'cif_photo',
-    //         'orderby' => 'date',
-    //         'posts_per_page' => 8,
-    //         'offset' => 8,
-    //         'order' => 'ASC',
-    //     ];
-    //     $query = new WP_Query($args);
-    //     if ($query->have_posts()) :
-    //         while ($query->have_posts()) :
-    //             $query->the_post();
-    //             $response = $query;
-    //         endwhile;
-    //     else :
-    //         $response = false;
-    //     endif;
-    //     wp_send_json($response);
-    //     wp_die();
-    //============================
-    // check_ajax_referer('load_more_posts', 'security');
     $page = $_POST['page'];
     $args = [
         'post_type' => 'cif_photo',

@@ -1,20 +1,24 @@
-.post{
+.post {
     position: relative;
-    &__title{
+
+    &__title {
         position: absolute;
         top: 0;
         left: 2%;
         color: #fff;
     }
-    &__meta{
+
+    &__meta {
         margin-top: 20px;
         margin-bottom: 20px;
-       p{
-        margin: 0;
-        font-weight: 500;
-       }
+
+        p {
+            margin: 0;
+            font-weight: 500;
+        }
     }
-    &__link{
+
+    &__link {
         text-decoration: none;
         font-weight: 600;
     }

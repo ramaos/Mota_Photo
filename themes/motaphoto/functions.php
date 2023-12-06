@@ -18,14 +18,12 @@ function motaphoto_register_assets() // fonction de chargement des styles et scr
 function motaphoto_supports() // fonction du theme supports
 {
     add_theme_support('title-tag'); // affichage de la balise titre
-    require_once('includes/class-wp-bootstrap-navwalker.php'); // ajout de la bibliotheque navwalker de bootstrap
-    add_theme_support('menus');
-    register_nav_menus(['header' => 'menu en-tete', 'footer' => 'menu pied de page']);
-    //register_nav_menu('footer', 'menu pied de page');
+    add_theme_support('menus'); // support des menus
+    register_nav_menus(['header' => 'menu en-tete', 'footer' => 'menu pied de page']); // enregistrement des menus en-tete et pied de page
     add_theme_support('post-thumbnails');
-    add_image_size('card-post', 564, 495, true);
-    add_image_size('header_image', 1440, 962, true);
-    add_image_size('single_image', 563, 844, true);
+    add_image_size('card-post', 564, 495, true); // ajout du format d'image cerd-post
+    add_image_size('header-image', 1440, 962, true); //ajout du format d'image header_image
+    add_image_size('single-image', 563, 844, true); // ajout du format d'image single-image
     remove_action('wp_head', 'wp_generator'); // suppression du générateur de version wordpress
     remove_filter('the_content', 'wptexturize'); // suppression des guillemets a la francaise
 } // fin de la fonction du theme supports
@@ -40,7 +38,7 @@ function motaphoto_image_sizes($sizes) //fonction de chargement dans l'administr
 function contact_motaphoto($items, $args) // fonction d'affichage de contact dans le menu
 {
     if ($args->theme_location == 'header') {
-        $items .= '<li class= "navbar__nav--item contact__motaphoto">CONTACT</li>';
+        $items .= '<li class= "navbar__nav--item contact__motaphoto contact__burger">CONTACT</li>';
     }
     return $items;
 }

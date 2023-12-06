@@ -7,8 +7,8 @@
   height: 80px;
   position: sticky;
   top: 0;
-  -webkit-box-shadow: 0px 11px 12px -7px rgba(126, 126, 126, 0.226); 
-  box-shadow: 0px 11px 12px -7px rgba(126, 126, 126, 0.226); 
+  -webkit-box-shadow: 0px 11px 12px -7px rgba(126, 126, 126, 0.226);
+  box-shadow: 0px 11px 12px -7px rgba(126, 126, 126, 0.226);
 }
 
 .navbar {
@@ -16,41 +16,61 @@
   justify-content: space-between;
   align-items: center;
   z-index: 10;
+
   &__logo {
     width: 216px;
     height: 14px;
     margin-left: 146px;
     margin-top: 25px;
+
     @media all and (max-width: 700px) {
       width: 138px;
       height: 9px;
       margin-top: 35px;
     }
   }
+
   &__nav {
     width: 25%;
     display: flex;
     justify-content: space-around;
     margin-right: 214px;
     margin-top: 25px;
+
     @media all and (max-width: 700px) {
       display: none;
     }
+
     &--item {
       list-style: none;
     }
+
     &--link {
       color: #000;
       font-size: 16px;
       font-weight: 400;
       line-height: 23.7px;
       text-decoration: none;
+
+      &:hover {
+        font-weight: 700;
+      }
     }
   }
 }
+
 .contact__motaphoto {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.7px;
   cursor: pointer;
+
+  &:hover {
+    font-weight: 700;
+  }
 }
+
 /*******    menu burger        *******/
 .burger__btn {
   position: absolute;
@@ -68,9 +88,11 @@
   bottom: 0;
   right: 5em;
   cursor: pointer;
+
   @media all and (max-width: 700px) {
     display: flex;
   }
+
   .line {
     height: 2px;
     background-color: #000;
@@ -80,6 +102,7 @@
     transition: all 0.1s ease-in-out;
   }
 }
+
 .burger__menu {
   position: absolute;
   display: none;
@@ -96,6 +119,7 @@
   visibility: visible;
   transform: translateY(-130%);
   z-index: 5;
+
   .navbar__nav--item {
     color: white;
     font-size: 44px;
@@ -104,6 +128,7 @@
     letter-spacing: 0em;
     text-align: center;
   }
+
   .navbar__nav--link {
     color: white;
     font-size: 44px;
@@ -112,22 +137,28 @@
     letter-spacing: 0em;
     text-align: center;
   }
+
   @media all and (max-width: 700px) {
     display: flex;
   }
 }
+
 .active .burger__menu {
-animation: burgerIn 1.5s ease-in-out both;
+  animation: burgerIn 1.5s ease-in-out both;
 }
+
 .active .burger__btn .line_1 {
   transform: rotate(45deg) translate(8px, 6px);
 }
+
 .active .burger__btn .line_2 {
   opacity: 0;
 }
+
 .active .burger__btn .line_3 {
   transform: rotate(-45deg) translate(8px, -6px);
 }
+
 /*=============  popup contact   ============*/
 .popup__overlay {
   position: fixed;
@@ -142,6 +173,7 @@ animation: burgerIn 1.5s ease-in-out both;
   cursor: pointer;
   z-index: 20;
 }
+
 .popup {
   position: fixed;
   left: 34%;
@@ -153,10 +185,12 @@ animation: burgerIn 1.5s ease-in-out both;
   padding: 15px 0;
   border: 5px solid #000000;
   z-index: 21;
+
   &__contaner {
-    padding-left: -10px;
+    padding-right: 10px;
+
     &--title {
-      padding-left: -10px;
+      padding-right: 10px;
       background-image: url('../images/Contact-header.png');
       background-repeat: repeat;
       overflow: hidden;
@@ -164,6 +198,7 @@ animation: burgerIn 1.5s ease-in-out both;
       height: 98px;
     }
   }
+
   &__contact {
     display: flex;
     justify-content: center;
@@ -171,23 +206,38 @@ animation: burgerIn 1.5s ease-in-out both;
     padding: 5px 0 70px;
     max-width: 265px;
     margin: auto;
+
+    .wpforms-submit-container {
+      @include rawCenter;
+
+      .wpforms-submit {
+        width: 100%;
+        color: #000 !important;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        background-color: #d8d8d8 !important;
+      }
+    }
   }
 }
+
 .header {
   position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
-  @media all and (max-width: 700px){
+
+  @media all and (max-width: 700px) {
     width: 379px;
     margin: 0 auto;
   }
-&__img{
-  @media all and (max-width: 700px){
- 
-   
+
+  &__img {
+    @media all and (max-width: 700px) {}
   }
-}
+
   &__title {
     position: absolute;
     bottom: 36%;

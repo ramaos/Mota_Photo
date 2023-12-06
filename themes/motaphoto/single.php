@@ -46,7 +46,7 @@ $types = get_the_terms(get_the_ID(), 'type');
                         ANNÉE: <?php the_field('annee'); ?>
                     </p>
                 </div>
-                <?php the_post_thumbnail('single_image'); ?>
+                <?php the_post_thumbnail('single-image'); ?>
             </article>
             <div class="contact-single">
                 <div class="contact-single__form">

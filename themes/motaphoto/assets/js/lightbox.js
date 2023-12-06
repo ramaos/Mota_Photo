@@ -1,22 +1,3 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//   const fullscreens = document.querySelectorAll(".icon_fullscreen");
-//   for (let i = 0; i < fullscreens.length; i++) {
-//     const fullscreen = fullscreens[i];
-//     const visionneuse = document.querySelector(".visionneuse");
-
-//     const visionneusePopup = document.querySelector(".visionneuse__popup");
-
-//     fullscreen.addEventListener("click", function () {
-//       visionneuse.style.display = "flex";
-//       visionneusePopup.style.display = "flex";
-//     });
-//     visionneuse.addEventListener("click", function () {
-//       visionneuse.style.display = "none";
-//       visionneusePopup.style.display = "none";
-//     });
-//   }
-// });
-//======================================================
 document.addEventListener("DOMContentLoaded", function () {
   /**
    * @property {HTMLElement} element

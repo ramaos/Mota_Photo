@@ -21,6 +21,17 @@
     opacity: 1;
   }
 }
+body {
+  width: 1440px;
+  margin: 0 auto;
+  font-family: "Space Mono", monospace;
+}
+
+.section {
+  width: 1148px;
+  margin: 0 auto;
+}
+
 /******          header            ******/
 .site__header {
   z-index: 10;
@@ -74,9 +85,19 @@
   line-height: 23.7px;
   text-decoration: none;
 }
+.navbar__nav--link:hover {
+  font-weight: 700;
+}
 
 .contact__motaphoto {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.7px;
   cursor: pointer;
+}
+.contact__motaphoto:hover {
+  font-weight: 700;
 }
 
 /*******    menu burger        *******/
@@ -194,10 +215,10 @@
   z-index: 21;
 }
 .popup__contaner {
-  padding-left: -10px;
+  padding-right: 10px;
 }
 .popup__contaner--title {
-  padding-left: -10px;
+  padding-right: 10px;
   background-image: url("../images/Contact-header.png");
   background-repeat: repeat;
   overflow: hidden;
@@ -211,6 +232,19 @@
   padding: 5px 0 70px;
   max-width: 265px;
   margin: auto;
+}
+.popup__contact .wpforms-submit-container {
+  display: flex;
+  justify-content: center;
+}
+.popup__contact .wpforms-submit-container .wpforms-submit {
+  width: 100%;
+  color: #000 !important;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  background-color: #d8d8d8 !important;
 }
 
 .header {
@@ -545,17 +579,6 @@ body {
   font-weight: 600;
 }
 
-body {
-  width: 1440px;
-  margin: 0 auto;
-  font-family: "Space Mono", monospace;
-}
-
-.section {
-  width: 1148px;
-  margin: 0 auto;
-}
-
 /*****  container posts    ******/
 .container {
   display: flex;
@@ -569,8 +592,8 @@ body {
   .container {
     flex-direction: column;
     align-items: center;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 .container__posts {
@@ -579,7 +602,7 @@ body {
 .container__posts .icon_eye {
   position: absolute;
   width: 46px;
-  height: 31.2;
+  height: 31.2px;
   left: 45%;
   top: 45%;
   cursor: pointer;
@@ -685,6 +708,13 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+@media all and (max-width: 700px) {
+  .site__footer .footer__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=theme.css.map */

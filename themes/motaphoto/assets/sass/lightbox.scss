@@ -14,9 +14,10 @@
     overflow: auto;
     animation: lightboxIn 500ms;
     transition: opacity 3s;
-    .fadeOut{
+
+    .fadeOut {
         opacity: 0;
-        }
+    }
 
     &__next {
         background: url('../images/Navigation_arrow_right.png') center center/ 100% 100% no-repeat;
@@ -84,7 +85,8 @@
             animation: lightboxIn 500ms;
         }
     }
-    &__loader{
+
+    &__loader {
         width: 38px;
         height: 38px;
         opacity: 0.5;
