@@ -9,7 +9,7 @@
         if ($categories && !is_wp_error($tcategories)) {
 
             foreach ($categories as $categorie) {
-                //echo  esc_html($categorie->name);
+
                 echo '<a href="' . esc_url(get_term_link($categorie)) . '" class="terme">' . esc_html($categorie->name) . '</a> ';
             }
         }
