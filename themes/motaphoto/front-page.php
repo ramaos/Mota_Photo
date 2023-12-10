@@ -1,5 +1,5 @@
-<?php get_header(); ?>
-
+<?php get_header();  ?>
+<!-- afficahge de la photo header -->
 <section class="header">
     <?php
     $args = [
@@ -27,8 +27,8 @@
 
     ?>
 </section>
+<!-- section fltres et photos accueil -->
 <section class="section">
-
     <?php get_template_part('template-parts/filters');
     ?>
 

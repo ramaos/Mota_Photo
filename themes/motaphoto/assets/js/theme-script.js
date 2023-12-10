@@ -8,8 +8,7 @@ btn.addEventListener("click", function () {
 
 //============  popup contact   ==============//
 const contact1 = document.querySelectorAll(".contact__motaphoto");
-const contact2 = document.querySelector(".contact-single__form--btn");
-console.log(contact1);
+//const contact2 = document.querySelector(".contact-single__form--btn");
 const popupOverlay = document.querySelector(".popup__overlay");
 const popup = document.querySelector(".popup");
 
@@ -22,14 +21,6 @@ popupOverlay.addEventListener("click", function () {
   popup.style.display = "none";
 });
 contact1[1].addEventListener("click", function () {
-  popupOverlay.style.display = "flex";
-  popup.style.display = "block";
-});
-popupOverlay.addEventListener("click", function () {
-  popupOverlay.style.display = "none";
-  popup.style.display = "none";
-});
-contact2.addEventListener("click", function () {
   popupOverlay.style.display = "flex";
   popup.style.display = "block";
 });

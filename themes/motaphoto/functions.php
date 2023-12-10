@@ -7,6 +7,9 @@ function motaphoto_register_assets() // fonction de chargement des styles et scr
     wp_enqueue_style('motaphoto-style', get_stylesheet_directory_uri() . '/assets/css/theme.css', ['animate-style'], filemtime(get_stylesheet_directory() . '/assets/css/theme.css'), 'all');
     wp_enqueue_script('lightbox-script', get_template_directory_uri() . '/assets/js/lightbox.js', ['jquery'], filemtime(get_stylesheet_directory() . '/assets/js/lightbox.js'), true); // script affichage plus
     wp_enqueue_script('motaphoto-script', get_template_directory_uri() . '/assets/js/theme-script.js', ['jquery'], filemtime(get_stylesheet_directory() . '/assets/js/theme-script.js'), true);
+    if (is_single()) {
+        wp_enqueue_script('contact-script', get_template_directory_uri() . '/assets/js/contact-single.js', ['jquery'], filemtime(get_stylesheet_directory() . '/assets/js/contact-single.js'), true);
+    }
     // script ajax
     if (is_front_page()) {
         wp_enqueue_script('ajax-script', get_template_directory_uri() . '/assets/js/ajax-affichage-plus.js', ['jquery'], filemtime(get_stylesheet_directory() . '/assets/js/ajax-affichage-plus.js'), true);

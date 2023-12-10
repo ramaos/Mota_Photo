@@ -1,6 +1,6 @@
 <?php
+// requette page single
 if (is_single()) {
-
     $taxonomie = 'categorie';
     $terme = get_the_term_list(get_the_ID(), $taxonomie);
     $args = array(
@@ -27,7 +27,7 @@ if (is_single()) {
     endif;
     wp_reset_postdata();
 } else {
-    //$order = strtoupper($_POST['order']);
+    // requette front-page
     $args = [
         'post_type' => 'cif_photo',
         'posts_per_page' => 8,
@@ -35,7 +35,6 @@ if (is_single()) {
         'orderby' => 'date',
         'order' => 'ASC',
     ];
-    // Affichage du portofolio sur la page.
     $query = new WP_Query($args);
     if ($query->have_posts()) :
         while ($query->have_posts()) : $query->the_post();
